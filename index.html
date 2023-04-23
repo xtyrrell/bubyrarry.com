@@ -1,0 +1,136 @@
+<body>
+    <div class="content">
+        <div class="title">
+            <p class="explainer"><em>Ruby Barry</em> is a blah blah... She is a cool gal according to some people
+                including friends and family. She likes lots of cups of tea every day. This is her work in progress and
+                stuff. <a class="click-me" href="##" onclick="alert('hi from ruby :)')">Click me</a></p>
+            <img class="title-svg" src="assets/rubys stuff.svg" />
+
+            <div class="byline-container" id="scroll-container">
+                <div id="scroll-text">buby rarry dot com bitch... blaahhh !! buby rarry dot com bitch... blaahhh !!
+                </div>
+            </div>
+        </div>
+
+        <!-- <img src="assets/dogs.png" /> -->
+        <div class="images">
+            <img src="assets/Thumbnail Saved Posts Example.png" />
+            <img src="assets/handoutexample.png" />
+            <img src="assets/followups.jpg" />
+            <img src="assets/Exhibition Outcome.png" />
+            <img src="assets/Rosie Lee Tompkins (b.1936) | Reference.png" />
+            <img src="assets/Nadia Lee Cohen (b. 1992) |Reference.png" />
+            <img src="assets/dogs.png" />
+            <img src="assets/2022/My project-16.png" />
+            <img src="assets/2022/Narrative1 copy 2.jpeg" />
+            <img src="assets/2022/Narrative1 copy 3.jpeg" />
+            <img src="assets/2022/Narrative1 copy.jpeg" />
+            <img src="assets/2022/Narrative11 copy.jpeg" />
+            <img src="assets/2022/Narrative20 copy 2.jpeg" />
+            <img src="assets/2022/Narrative20 copy 3.jpeg" />
+            <img src="assets/2022/Narrative20 copy.jpeg" />
+
+
+        </div>
+
+    </div>
+</body>
+
+
+<!-- <button onclick="() => { alert('yeah hello') }" value="hi there"></button> -->
+
+
+<style>
+    html {
+        background: #CCFF66;
+        color: black;
+
+
+        cursor: url("assets/cursor.svg"), auto !important;
+    }
+
+    @font-face {
+        font-family: "Suisse Int'l";
+        src: url("assets/Suisse\ Int\'l/SuisseIntl-Light.otf");
+    }
+
+    * {
+        font-family: "Suisse Int'l", 'Helvetica Neue';
+    }
+
+    .explainer {
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .title-svg {
+        width: 100%;
+    }
+
+    .click-me {
+        color: blue;
+    }
+
+    #scroll-container {
+        overflow: hidden;
+    }
+
+    #scroll-text {
+        transform: translateX(100%);
+        animation: my-animation 15s linear infinite;
+    }
+
+    @keyframes my-animation {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        width: calc(100% - 80px);
+        flex-direction: column;
+        margin: 40px;
+
+
+        /* height: 100%; */
+
+    }
+
+    .images img {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+        aspect-ratio: 1;
+        /* background-color: white; */
+    }
+
+    .images {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    button,
+    a {
+        /* background-color: white; */
+        cursor: url("assets/click.svg"), auto !important;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .byline-container {
+        font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+</style>
